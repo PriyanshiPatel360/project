@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs - CareerConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#9333EA',
+                        secondary: '#FF4500',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold">Career<span class="text-secondary">Connect</span></h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="#" class="text-primary font-medium">Jobs</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Browse</a>
+
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Login</a>
+                    <a href="#" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors">Signup</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Filter Sidebar -->
+            <div class="w-full md:w-80 bg-white rounded-lg shadow-sm p-6">
+                <h2 class="text-xl font-bold mb-6">Filter Jobs</h2>
+
+                <!-- Location Section -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-semibold mb-4">Location</h3>
+                    <div class="space-y-3">
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="radio" name="location" class="form-radio text-primary">
+                            <span class="text-gray-700">Delhi NCR</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="radio" name="location" class="form-radio text-primary">
+                            <span class="text-gray-700">Bangalore</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="radio" name="location" class="form-radio text-primary">
+                            <span class="text-gray-700">Hyderabad</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="radio" name="location" class="form-radio text-primary">
+                            <span class="text-gray-700">Pune</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="radio" name="location" class="form-radio text-primary">
+                            <span class="text-gray-700">Mumbai</span>
+                        </label>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Job Role Section -->
+            <div class="mb-8">
+                <h3 class="text-lg font-semibold mb-4">Job Role</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center space-x-3 cursor-pointer">
+                        <input type="radio" name="Job Role" class="form-radio text-primary">
+                        <span class="text-gray-700">Frontend Developer</span>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer">
+                        <input type="radio" name="Job Role" class="form-radio text-primary">
+                        <span class="text-gray-700">Backend Developer</span>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer">
+                        <input type="radio" name="Job Role" class="form-radio text-primary">
+                        <span class="text-gray-700">FullStack Developer</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Salary Section -->
+            <div class="mb-8 ">
+                <h3 class="text-lg font-semibold mb-4 ">Salary</h3>
+                <div class="space-y-3">
+                    <label class="flex items-center space-x-3 cursor-pointer">
+                        <input type="radio" name="salary" class="form-radio text-primary">
+                        <span class="text-gray-700">0-40k</span>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer">
+                        <input type="radio" name="salary" class="form-radio text-primary">
+                        <span class="text-gray-700">42-1lakh</span>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer">
+                        <input type="radio" name="salary" class="form-radio text-primary">
+                        <span class="text-gray-700">1lakh to 5lakh</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Company Section
+        <div class="mb-8 ">
+            <h3 class="text-lg font-semibold mb-4 ">Company </h3>
+            <div class="space-y-3">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="Company " class="form-radio text-primary">
+                    <span class="text-gray-700">Google</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="Company " class="form-radio text-primary">
+                    <span class="text-gray-700">Microsoft</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio" name="Company " class="form-radio text-primary">
+                    <span class="text-gray-700">Amazon</span>
+                </label>
+            </div>
+        </div>
+    </div> -->
+
+
+        <!-- Jobs List Section -->
+        <div class="flex-1">
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <h2 class="text-xl text-gray-600">Job not found</h2>
+            </div>
+        </div>
+
+  
