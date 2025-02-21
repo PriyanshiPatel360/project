@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .input-focus:focus {
+            outline: none;
+            border-color: blueviolet; 
+            box-shadow: 0 0 0 2px blue;
+        }
+        .button-hover:hover {
+            background-color: blueviolet;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96 transition-transform transform hover:scale-105">
+        <h1 class="text-2xl font-bold mb-6 text-center">Sign Up</h1>
+        <form>
+            <div class="mb-4">
+                <label for="fullName" class="block text-sm mb-1">Full Name</label>
+                <input type="text" id="fullName" class="w-full p-2 rounded border border-gray-300 input-focus transition duration-200" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm mb-1">Email</label>
+                <input type="email" id="email" class="w-full p-2 rounded border border-gray-300 input-focus transition duration-200" required>
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="block text-sm mb-1">Phone Number</label>
+                <input type="tel" id="phone" class="w-full p-2 rounded border border-gray-300 input-focus transition duration-200" required>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-sm mb-1">Password</label>
+                <input type="password" id="password" class="w-full p-2 rounded border border-gray-300 input-focus transition duration-200" required>
+            </div>
+            <div class="mb-4">
+                <span class="block text-sm mb-1"></span>
+                <label class="inline-flex items-center mr-4">
+                    <input type="radio" name="userType" value="student" class="form-radio text-blue-600" checked>
+                    <span class="ml-2">Student</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="radio" name="userType" value="recruiter" class="form-radio text-blue-600">
+                    <span class="ml-2">Recruiter</span>
+                </label>
+            </div>
+            <div class="mb-4">
+                <label for="profile" class="block text-sm mb-1">Profile</label>
+                <input type="file" id="profile" class="w-full p-2 rounded border border-gray-300">
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded button-hover transition duration-200">Sign Up</button>
+            <div class="mt-4 text-center">
+                <p class="text-sm">Already have an account? <a href="#" class="text-blue-400 hover:underline">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+C:\Users\reena\python\DATABASE\scr\signup.html
